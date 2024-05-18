@@ -18,7 +18,7 @@ Here are few resources if you wanna dig deep in how the things work:
 ## Prerequisites
 Users must have:
  - Git installed in their Ubuntu 22
-
+ 
 		sudo apt update
 		sudo apt install git
     
@@ -101,5 +101,34 @@ Add the following lines to the end of your .bashrc file and save the file.
 Open the `iris_runaway.sdf` file on Gazebo
 
 	gz sim -v4 -r iris_runway.sdf
+
+If everything goes correctly, you should see the following world load up in Gazebo Sim 7:
+![enter image description here](https://github.com/B6Infinity/dronekit-in-ubuntu22/blob/main/image.png?raw=true) 
+
+
+### 6. Run the SITL
+
+	python3 $simvehicle_path -v ArduCopter -f gazebo-iris --model JSON --map --console
+
+You should see two terminals pop-up. If you see the text `Flight battery 100 percent` in the parent terminal and
+
+> JSON received: 	timestamp 	
+> imu: gyro 	
+> imu: accel_body 	
+> position
+> quaternion
+> velocity
+
+in the pop-up terminal, you are good to go.
+
+However there is a problem. The `--console` flag is supposed to open up a mavlink console, but it fails for some reason, I will update this once I find the fix.
+
+## Run `Dronekit` code
+
+### 1. Install `Dronekit` for `python3`
+
+	pip3 install dronekit
+
+### 2. Create a `pulse.py` file anywhere and put in the following code
 
 
