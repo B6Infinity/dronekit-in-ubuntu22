@@ -17,10 +17,10 @@ Here are few resources if you wanna dig deep in how the things work:
 
 ## Prerequisites
 Users must have:
- - `Git` installed in their Ubuntu 22.
+ - Git installed in their Ubuntu 22
 
-    `sudo apt update`
-    `sudo apt install git`
+		sudo apt update
+		sudo apt install git
     
 ## ArduPilot Setup
 
@@ -32,11 +32,11 @@ Users must have:
 ### 2. Install some required packages
 If you are on a debian based system (such as Ubuntu or Mint), there is [a script](https://github.com/ArduPilot/ardupilot/blob/master/Tools/environment_install/install-prereqs-ubuntu.sh) that will do it for you. From the cloned ardupilot directory :
 
-- `Tools/environment_install/install-prereqs-ubuntu.sh -y`
+	Tools/environment_install/install-prereqs-ubuntu.sh -y
 
 Reload the path (log-out and log-in to make it permanent):
 
-- `. ~/.profile`
+	. ~/.profile
 
 Now you should be able to build with waf as described in [BUILD.md](https://github.com/ArduPilot/ardupilot/blob/master/BUILD.md).
 
@@ -44,7 +44,7 @@ Now you should be able to build with waf as described in [BUILD.md](https://gith
 
 If there have been updates to some git submodules you may need to do a full clean build. To do that use:
 
-- `./waf clean`
+	./waf clean
 
 That will remove the build artifacts so you can do a [build](https://github.com/ArduPilot/ardupilot/blob/master/BUILD.md) from scratch
 
@@ -86,4 +86,20 @@ For Gazebo garden
     cmake .. -DCMAKE_BUILD_TYPE=RelWithDebInfo
     make -j4
 
-### 
+### 4. Adding required environment variables
+Open the `~/.bashrc` file:
+	
+	gedit ~/.bashrc
+Add the following lines to the end of your .bashrc file and save the file.
+
+	export simvehicle_path="$HOME/ardupilot/Tools/autotest/sim_vehicle.py"
+	export ARDUPILOT_HOME="$HOME/ardupilot"
+	export GZ_SIM_RESOURCE_PATH="$GZ_SIM_RESOURCE_PATH:$HOME/ardupilot_gazebo/worlds:$HOME/ardupilot_gazebo/models
+	export GZ_SIM_SYSTEM_PLUGIN_PATH="$GZ_SIM_SYSTEM_PLUGIN_PATH:$HOME/ardupilot_gazebo/build" 
+
+### 5. Run Gazebo
+Open the `iris_runaway.sdf` file on Gazebo
+
+	gz sim -v4 -r iris_runway.sdf
+
+
