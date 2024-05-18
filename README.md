@@ -137,4 +137,7 @@ The Drone should takeoff, hold altitude for a few seconds and come down.
 
 -----------------
 
+## What next?
+
+Visit the [documentation](https://dronekit-python.readthedocs.io/en/latest/) of `Dronekit` and have fun.
 
