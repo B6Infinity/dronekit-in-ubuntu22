@@ -68,7 +68,7 @@ Check that the Gazebo installation is working:
   
 	gz sim -v4 -r shapes.sdf
 
-If you see the following window and no errors in the terminal, you have installed **Gazebo Sim 7** correctly.
+If you see the following window and no errors in the terminal, you have installed **Gazebo Sim 7** correctly. Use the left, right and middle mouse button to interact with the viewport.
 
 ![enter image description here](https://api.gazebosim.org/1.0/images/harmonic/tutorials/gui/shapes.png)
 ### 2. Install additional dependencies
