@@ -94,7 +94,7 @@ Add the following lines to the end of your .bashrc file and save the file.
 
 	export simvehicle_path="$HOME/ardupilot/Tools/autotest/sim_vehicle.py"
 	export ARDUPILOT_HOME="$HOME/ardupilot"
-	export GZ_SIM_RESOURCE_PATH="$GZ_SIM_RESOURCE_PATH:$HOME/ardupilot_gazebo/worlds:$HOME/ardupilot_gazebo/models
+	export GZ_SIM_RESOURCE_PATH="$GZ_SIM_RESOURCE_PATH:$HOME/ardupilot_gazebo/worlds:$HOME/ardupilot_gazebo/models"
 	export GZ_SIM_SYSTEM_PLUGIN_PATH="$GZ_SIM_SYSTEM_PLUGIN_PATH:$HOME/ardupilot_gazebo/build" 
 
 ### 5. Run Gazebo
