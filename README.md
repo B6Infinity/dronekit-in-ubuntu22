@@ -135,14 +135,16 @@ A common error is that when `import dronekit` is executed, it throws the error
 
 To fix this:
 - Open the `__init__.py` file of the `dronekit` package (In an IDE like VS-Code, type in `import dronekit` and Ctrl+Click on **dronekit**
-- Add the following lines manually after the import collections statement:
-	
-	import collections
-	
-	# Manual Patch
-	import collections
-	from collections import abc
-	collections.MutableMapping = abc.MutableMapping
+- Add the following lines manually after the import collections statement
+
+	    import collections
+  
+	    # Manual Patch
+	    import collections
+	    from collections import abc
+	    collections.MutableMapping = abc.MutableMapping
+
+* However, this is a quick fix and not recommended in the long run, visit [this forum](https://stackoverflow.com/questions/70943244/attributeerror-module-collections-has-no-attribute-mutablemapping) to understand the problem.
 
 
 ### 2. Create a `DroneTerminal.py` file anywhere and put in the [following code](https://github.com/B6Infinity/dronekit-in-ubuntu22/blob/main/DroneTerminal.py)
