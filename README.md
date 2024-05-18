@@ -129,6 +129,12 @@ However there is a problem. The `--console` flag is supposed to open up a mavlin
 
 	pip3 install dronekit
 
-### 2. Create a `pulse.py` file anywhere and put in the following code
+### 2. Create a `DroneTerminal.py` file anywhere and put in the [following code](https://github.com/B6Infinity/dronekit-in-ubuntu22/blob/main/DroneTerminal.py)
+
+### 3. Create a `pulse.py` file and put in the [following code](https://github.com/B6Infinity/dronekit-in-ubuntu22/blob/main/pulse.py)
+
+The Drone should takeoff, hold altitude for a few seconds and come down.
+
+-----------------
 
 
