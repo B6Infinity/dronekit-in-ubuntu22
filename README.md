@@ -26,7 +26,7 @@ Users must have:
 
 ### 1. Clone ArduPilot repository
     cd
-    git clone --recurse-submodules https://github.com/ArduPilot/ardupilot
+    git clone --recursive https://github.com/ArduPilot/ardupilot
     cd ardupilot
 
 ### 2. Install some required packages
