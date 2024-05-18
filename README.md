@@ -144,7 +144,7 @@ To fix this:
 	    from collections import abc
 	    collections.MutableMapping = abc.MutableMapping
 
-* However, this is a quick fix and not recommended in the long run, visit [this forum](https://stackoverflow.com/questions/70943244/attributeerror-module-collections-has-no-attribute-mutablemapping) to understand the problem.
+* However, this is a quick fix and not recommended in the long run, visit [this stackoverflow problem](https://stackoverflow.com/questions/70943244/attributeerror-module-collections-has-no-attribute-mutablemapping) to understand the problem.
 
 
 ### 2. Create a `DroneTerminal.py` file anywhere and put in the [following code](https://github.com/B6Infinity/dronekit-in-ubuntu22/blob/main/DroneTerminal.py)
