@@ -106,7 +106,7 @@ If everything goes correctly, you should see the following world load up in Gaze
 ![enter image description here](https://github.com/B6Infinity/dronekit-in-ubuntu22/blob/main/image.png?raw=true) 
 
 
-### 6. Run the SITL
+### 6. Run the SITL (in a different terminal)
 
 	python3 $simvehicle_path -v ArduCopter -f gazebo-iris --model JSON --map --console
 
