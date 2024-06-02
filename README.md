@@ -155,6 +155,8 @@ The Drone should takeoff, hold altitude for a few seconds and come down.
 
 -----------------
 
+To install a camera with this, go to this [repo](https://github.com/B6Infinity/ardupilot_gazebo_with_cam/tree/main).
+
 ## What next?
 
 Visit the [documentation](https://dronekit-python.readthedocs.io/en/latest/) of `Dronekit` and have fun.
