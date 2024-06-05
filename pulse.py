@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 from DroneTerminal import Drone
+from time import sleep
 
 drone = Drone(connection_string='127.0.0.1:14550') # Connects to connection_string
 
